@@ -26,7 +26,7 @@ class StandaloneReaderPluginManager implements ContainerInterface
      * @param string $plugin
      * @return bool
      */
-    public function has($plugin)
+    public function has($plugin): bool
     {
         if (in_array($plugin, array_values($this->knownPlugins), true)) {
             return true;
